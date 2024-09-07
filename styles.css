@@ -1,6 +1,6 @@
 header {
     background-color: black;
-    text-decoration-color: white;
+    text-decoration-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,10 +11,10 @@ header {
     padding: 0 8%;
     box-shadow: 0 5px 10px white;
     font-style: normal;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -25,9 +25,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     list-style: none;
-    text-decoration: white;
+    text-decoration: black;
+    color: #000;
+
 }
 header  .logo  {
 	font-size: 20px;
@@ -42,14 +44,14 @@ header  .logo  {
         float: left;
         
     }
-    header nav ul li  {
+    header nav ul button  {
         padding: 15px;
         color: black;
         font-size: 16px;
         display: block; 
         
     }
-    header nav ul li:hover {
+    header nav ul .btn:hover {
         transform: scale(1.2);
     }
     a:link {
@@ -59,7 +61,7 @@ header  .logo  {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .container {
-        flex: 0.5
+        flex: 1;
     }
     footer{
         background-color: black;
@@ -124,12 +126,13 @@ header  .logo  {
         text-align: center;
         padding: 10%;
     }
-    h2 {
+    h2  {
         color:#ffffff;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         justify-content: space-around;
-        font-weight: 100;
+        font-weight: 500;
         text-align: center;
+        
     }
     .wiuck-news {
         background-color: #ffffff;
@@ -155,7 +158,7 @@ color: black;
     color: black;
 }
 img {
-    margin-top: 1%;
+    margin-top: 9%;
 }
 button  {
 	
@@ -165,7 +168,7 @@ button  {
 	outline : none ;
 	border: none;
 	border-radius: 25px;
-	background-color: white;
+	
 	cursor: pointer;
 	color: black;
 	font-weight: 600;
@@ -174,19 +177,34 @@ button  {
 	right: 40;
 	left:20;
 	top: 20;
-	margin: 5
+	margin: 10px
+}
+button:active { font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 .lr {
     align-items: center;
     margin-left: 10%;
 }
-.back {
-    background-color: #ffffff;
-    position: relative;
-    color:white ;
-    display: flex;
-    justify-content: center;
-}
-a:visited {
+
+li a:visited {
     color: #ffffff;
+}
+ video {
+ border-radius: 50px;
+ align-items: center;
+ margin-top: 10%;
+ padding: 10px;
+ float: left;
+ margin-left: 10%;
+}
+.btn {
+    color: #000;
+    width: 150px;
+   
+    position: relative;
+    top: 500px;
+    left: 0;
+    right: 0px;
+    margin: 10%;
 }
